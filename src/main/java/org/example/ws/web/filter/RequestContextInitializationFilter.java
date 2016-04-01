@@ -34,12 +34,12 @@ public class RequestContextInitializationFilter extends GenericFilterBean {
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp,
             FilterChain chain) throws IOException, ServletException {
-        logger.info("> doFilter");
+        logger.info("> doFilter: RCIFilter");
 
         RequestContext.init();
 
         chain.doFilter(req, resp);
-        logger.info("< doFilter");
+        logger.info("< doFilter: RCIFilter");
     }
 
 }

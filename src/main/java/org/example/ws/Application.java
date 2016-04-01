@@ -21,6 +21,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableCaching
 @EnableScheduling
 @EnableAsync
+// @EnableSwagger moved to SwaggerConfiguration
 public class Application {
 
     /**
